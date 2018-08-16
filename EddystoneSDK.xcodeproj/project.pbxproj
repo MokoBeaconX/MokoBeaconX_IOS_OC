@@ -182,13 +182,13 @@
 		00151B7421226E91004EC60D /* HCKTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00151AC121226E91004EC60D /* HCKTimePickerView.m */; };
 		00151B7521226E91004EC60D /* HCKTimerPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00151AC321226E91004EC60D /* HCKTimerPickerModel.m */; };
 		00151B7621226E91004EC60D /* HCKWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00151AC621226E91004EC60D /* HCKWaveView.m */; };
-		0016C1082125616D00B1C32D /* CBPeripheral+eddystoneAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C0F72125616D00B1C32D /* CBPeripheral+eddystoneAdd.m */; };
-		0016C1092125616D00B1C32D /* MKBaseReceiveBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C0F92125616D00B1C32D /* MKBaseReceiveBeacon.m */; };
-		0016C10A2125616D00B1C32D /* MKCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C0FB2125616D00B1C32D /* MKCentralManager.m */; };
-		0016C10B2125616D00B1C32D /* MKEddystoneAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C0FD2125616D00B1C32D /* MKEddystoneAdopter.m */; };
-		0016C10C2125616D00B1C32D /* MKEddystoneDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C0FF2125616D00B1C32D /* MKEddystoneDataParser.m */; };
-		0016C10D2125616D00B1C32D /* MKEddystoneInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C1012125616D00B1C32D /* MKEddystoneInterface.m */; };
-		0016C10E2125616D00B1C32D /* MKEddystoneOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C1032125616D00B1C32D /* MKEddystoneOperation.m */; };
+		0016C122212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C111212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m */; };
+		0016C123212583AF00B1C32D /* MKBaseReceiveBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C113212583AF00B1C32D /* MKBaseReceiveBeacon.m */; };
+		0016C124212583AF00B1C32D /* MKCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C115212583AF00B1C32D /* MKCentralManager.m */; };
+		0016C125212583AF00B1C32D /* MKEddystoneAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C117212583AF00B1C32D /* MKEddystoneAdopter.m */; };
+		0016C126212583AF00B1C32D /* MKEddystoneDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C119212583AF00B1C32D /* MKEddystoneDataParser.m */; };
+		0016C127212583AF00B1C32D /* MKEddystoneInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C11B212583AF00B1C32D /* MKEddystoneInterface.m */; };
+		0016C128212583AF00B1C32D /* MKEddystoneOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C11D212583AF00B1C32D /* MKEddystoneOperation.m */; };
 		001EC5E4211AE4380041806D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC5E3211AE4380041806D /* AppDelegate.m */; };
 		001EC5EC211AE4380041806D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001EC5EB211AE4380041806D /* Assets.xcassets */; };
 		001EC5F2211AE4380041806D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC5F1211AE4380041806D /* main.m */; };
@@ -433,24 +433,24 @@
 		00151AC521226E91004EC60D /* HCKWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCKWaveView.h; sourceTree = "<group>"; };
 		00151AC621226E91004EC60D /* HCKWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCKWaveView.m; sourceTree = "<group>"; };
 		00151AC721226E91004EC60D /* MKTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTestViewController.h; sourceTree = "<group>"; };
-		0016C0F62125616D00B1C32D /* CBPeripheral+eddystoneAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+eddystoneAdd.h"; sourceTree = "<group>"; };
-		0016C0F72125616D00B1C32D /* CBPeripheral+eddystoneAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+eddystoneAdd.m"; sourceTree = "<group>"; };
-		0016C0F82125616D00B1C32D /* MKBaseReceiveBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseReceiveBeacon.h; sourceTree = "<group>"; };
-		0016C0F92125616D00B1C32D /* MKBaseReceiveBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseReceiveBeacon.m; sourceTree = "<group>"; };
-		0016C0FA2125616D00B1C32D /* MKCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCentralManager.h; sourceTree = "<group>"; };
-		0016C0FB2125616D00B1C32D /* MKCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCentralManager.m; sourceTree = "<group>"; };
-		0016C0FC2125616D00B1C32D /* MKEddystoneAdopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneAdopter.h; sourceTree = "<group>"; };
-		0016C0FD2125616D00B1C32D /* MKEddystoneAdopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneAdopter.m; sourceTree = "<group>"; };
-		0016C0FE2125616D00B1C32D /* MKEddystoneDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneDataParser.h; sourceTree = "<group>"; };
-		0016C0FF2125616D00B1C32D /* MKEddystoneDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneDataParser.m; sourceTree = "<group>"; };
-		0016C1002125616D00B1C32D /* MKEddystoneInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneInterface.h; sourceTree = "<group>"; };
-		0016C1012125616D00B1C32D /* MKEddystoneInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneInterface.m; sourceTree = "<group>"; };
-		0016C1022125616D00B1C32D /* MKEddystoneOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperation.h; sourceTree = "<group>"; };
-		0016C1032125616D00B1C32D /* MKEddystoneOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneOperation.m; sourceTree = "<group>"; };
-		0016C1042125616D00B1C32D /* MKEddystoneOperationIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperationIDDefines.h; sourceTree = "<group>"; };
-		0016C1052125616D00B1C32D /* MKEddystoneSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneSDK.h; sourceTree = "<group>"; };
-		0016C1062125616D00B1C32D /* MKEddystoneService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneService.h; sourceTree = "<group>"; };
-		0016C1072125616D00B1C32D /* MKSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSDKDefines.h; sourceTree = "<group>"; };
+		0016C110212583AF00B1C32D /* CBPeripheral+eddystoneAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+eddystoneAdd.h"; sourceTree = "<group>"; };
+		0016C111212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+eddystoneAdd.m"; sourceTree = "<group>"; };
+		0016C112212583AF00B1C32D /* MKBaseReceiveBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseReceiveBeacon.h; sourceTree = "<group>"; };
+		0016C113212583AF00B1C32D /* MKBaseReceiveBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseReceiveBeacon.m; sourceTree = "<group>"; };
+		0016C114212583AF00B1C32D /* MKCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCentralManager.h; sourceTree = "<group>"; };
+		0016C115212583AF00B1C32D /* MKCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCentralManager.m; sourceTree = "<group>"; };
+		0016C116212583AF00B1C32D /* MKEddystoneAdopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneAdopter.h; sourceTree = "<group>"; };
+		0016C117212583AF00B1C32D /* MKEddystoneAdopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneAdopter.m; sourceTree = "<group>"; };
+		0016C118212583AF00B1C32D /* MKEddystoneDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneDataParser.h; sourceTree = "<group>"; };
+		0016C119212583AF00B1C32D /* MKEddystoneDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneDataParser.m; sourceTree = "<group>"; };
+		0016C11A212583AF00B1C32D /* MKEddystoneInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneInterface.h; sourceTree = "<group>"; };
+		0016C11B212583AF00B1C32D /* MKEddystoneInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneInterface.m; sourceTree = "<group>"; };
+		0016C11C212583AF00B1C32D /* MKEddystoneOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperation.h; sourceTree = "<group>"; };
+		0016C11D212583AF00B1C32D /* MKEddystoneOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneOperation.m; sourceTree = "<group>"; };
+		0016C11E212583AF00B1C32D /* MKEddystoneOperationIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperationIDDefines.h; sourceTree = "<group>"; };
+		0016C11F212583AF00B1C32D /* MKEddystoneSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneSDK.h; sourceTree = "<group>"; };
+		0016C120212583AF00B1C32D /* MKEddystoneService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneService.h; sourceTree = "<group>"; };
+		0016C121212583AF00B1C32D /* MKSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSDKDefines.h; sourceTree = "<group>"; };
 		001EC5DF211AE4380041806D /* EddystoneSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EddystoneSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001EC5E2211AE4380041806D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		001EC5E3211AE4380041806D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -993,35 +993,35 @@
 			path = HCKWaveView;
 			sourceTree = "<group>";
 		};
-		0016C0F52125616D00B1C32D /* SDK */ = {
+		0016C10F212583AF00B1C32D /* beaconXSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0016C0F62125616D00B1C32D /* CBPeripheral+eddystoneAdd.h */,
-				0016C0F72125616D00B1C32D /* CBPeripheral+eddystoneAdd.m */,
-				0016C0F82125616D00B1C32D /* MKBaseReceiveBeacon.h */,
-				0016C0F92125616D00B1C32D /* MKBaseReceiveBeacon.m */,
-				0016C0FA2125616D00B1C32D /* MKCentralManager.h */,
-				0016C0FB2125616D00B1C32D /* MKCentralManager.m */,
-				0016C0FC2125616D00B1C32D /* MKEddystoneAdopter.h */,
-				0016C0FD2125616D00B1C32D /* MKEddystoneAdopter.m */,
-				0016C0FE2125616D00B1C32D /* MKEddystoneDataParser.h */,
-				0016C0FF2125616D00B1C32D /* MKEddystoneDataParser.m */,
-				0016C1002125616D00B1C32D /* MKEddystoneInterface.h */,
-				0016C1012125616D00B1C32D /* MKEddystoneInterface.m */,
-				0016C1022125616D00B1C32D /* MKEddystoneOperation.h */,
-				0016C1032125616D00B1C32D /* MKEddystoneOperation.m */,
-				0016C1042125616D00B1C32D /* MKEddystoneOperationIDDefines.h */,
-				0016C1052125616D00B1C32D /* MKEddystoneSDK.h */,
-				0016C1062125616D00B1C32D /* MKEddystoneService.h */,
-				0016C1072125616D00B1C32D /* MKSDKDefines.h */,
+				0016C110212583AF00B1C32D /* CBPeripheral+eddystoneAdd.h */,
+				0016C111212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m */,
+				0016C112212583AF00B1C32D /* MKBaseReceiveBeacon.h */,
+				0016C113212583AF00B1C32D /* MKBaseReceiveBeacon.m */,
+				0016C114212583AF00B1C32D /* MKCentralManager.h */,
+				0016C115212583AF00B1C32D /* MKCentralManager.m */,
+				0016C116212583AF00B1C32D /* MKEddystoneAdopter.h */,
+				0016C117212583AF00B1C32D /* MKEddystoneAdopter.m */,
+				0016C118212583AF00B1C32D /* MKEddystoneDataParser.h */,
+				0016C119212583AF00B1C32D /* MKEddystoneDataParser.m */,
+				0016C11A212583AF00B1C32D /* MKEddystoneInterface.h */,
+				0016C11B212583AF00B1C32D /* MKEddystoneInterface.m */,
+				0016C11C212583AF00B1C32D /* MKEddystoneOperation.h */,
+				0016C11D212583AF00B1C32D /* MKEddystoneOperation.m */,
+				0016C11E212583AF00B1C32D /* MKEddystoneOperationIDDefines.h */,
+				0016C11F212583AF00B1C32D /* MKEddystoneSDK.h */,
+				0016C120212583AF00B1C32D /* MKEddystoneService.h */,
+				0016C121212583AF00B1C32D /* MKSDKDefines.h */,
 			);
-			path = SDK;
+			path = beaconXSDK;
 			sourceTree = "<group>";
 		};
 		001EC5D6211AE4380041806D = {
 			isa = PBXGroup;
 			children = (
-				0016C0F52125616D00B1C32D /* SDK */,
+				0016C10F212583AF00B1C32D /* beaconXSDK */,
 				001EC5E1211AE4380041806D /* EddystoneSDK */,
 				001EC5E0211AE4380041806D /* Products */,
 				6C56321BB2C46A58763D52DF /* Pods */,
@@ -1317,19 +1317,19 @@
 				00151B3621226E91004EC60D /* HCKScanBeaconModel.m in Sources */,
 				00151B5821226E91004EC60D /* HCKDateFormatter.m in Sources */,
 				00151B6B21226E91004EC60D /* HCKSlider.m in Sources */,
-				0016C1092125616D00B1C32D /* MKBaseReceiveBeacon.m in Sources */,
-				0016C1082125616D00B1C32D /* CBPeripheral+eddystoneAdd.m in Sources */,
+				0016C123212583AF00B1C32D /* MKBaseReceiveBeacon.m in Sources */,
+				0016C122212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m in Sources */,
 				00151B4321226E91004EC60D /* HCKSimpleSelectedCell.m in Sources */,
 				00151B3C21226E91004EC60D /* HCKScanBaseCell.m in Sources */,
 				00151B5921226E91004EC60D /* HCKRefreshHeader.m in Sources */,
-				0016C10B2125616D00B1C32D /* MKEddystoneAdopter.m in Sources */,
+				0016C125212583AF00B1C32D /* MKEddystoneAdopter.m in Sources */,
 				00151B6121226E91004EC60D /* HCKHudManager.m in Sources */,
 				00151B7521226E91004EC60D /* HCKTimerPickerModel.m in Sources */,
 				00151B4121226E91004EC60D /* HCKBaseSimpleModel.m in Sources */,
 				001EC5F2211AE4380041806D /* main.m in Sources */,
 				001EC5E4211AE4380041806D /* AppDelegate.m in Sources */,
 				00151B5721226E91004EC60D /* HCKAttributedStringManager.m in Sources */,
-				0016C10C2125616D00B1C32D /* MKEddystoneDataParser.m in Sources */,
+				0016C126212583AF00B1C32D /* MKEddystoneDataParser.m in Sources */,
 				00151B4921226E91004EC60D /* HCKCustomNaviView.m in Sources */,
 				00151B7621226E91004EC60D /* HCKWaveView.m in Sources */,
 				00151B7421226E91004EC60D /* HCKTimePickerView.m in Sources */,
@@ -1352,11 +1352,11 @@
 				00151B5421226E91004EC60D /* UITextField+HCKAdd.m in Sources */,
 				00151B4821226E91004EC60D /* HCKBaseTableView.m in Sources */,
 				00151B5521226E91004EC60D /* UIView+HCKAdd.m in Sources */,
-				0016C10A2125616D00B1C32D /* MKCentralManager.m in Sources */,
+				0016C124212583AF00B1C32D /* MKCentralManager.m in Sources */,
 				00151B7221226E91004EC60D /* HCKSystemResource.m in Sources */,
 				00151B5221226E91004EC60D /* UIImage+HCKAdd.m in Sources */,
 				00151B4021226E91004EC60D /* HCKBaseCell.m in Sources */,
-				0016C10D2125616D00B1C32D /* MKEddystoneInterface.m in Sources */,
+				0016C127212583AF00B1C32D /* MKEddystoneInterface.m in Sources */,
 				00151B4D21226E91004EC60D /* NSDateFormatter+HCKAdd.m in Sources */,
 				00151B3A21226E91004EC60D /* HCKEddStoneUIDCell.m in Sources */,
 				00151B4C21226E91004EC60D /* NSDate+HCK.m in Sources */,
@@ -1367,7 +1367,7 @@
 				00151B5021226E91004EC60D /* UIApplication+HCKAdd.m in Sources */,
 				00151B5621226E91004EC60D /* UIViewController+HCKAdd.m in Sources */,
 				00151B6621226E91004EC60D /* HCKRefreshGifHeader.m in Sources */,
-				0016C10E2125616D00B1C32D /* MKEddystoneOperation.m in Sources */,
+				0016C128212583AF00B1C32D /* MKEddystoneOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
