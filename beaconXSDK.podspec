@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"                 #支持的平台和版本号
   s.ios.deployment_target = "8.0"
   s.frameworks   = "UIKit", "Foundation" #支持的框架
-  s.source       = { :git => "https://github.com/MokoLife/mokoLife_iOS.git", :tag => "#{s.version}" }         #存储库的git地址，以及tag值
+  s.source       = { :git => "https://github.com/MokoBeaconX/mokoBeaconX_iOS.git, :tag => "#{s.version}" }         #存储库的git地址，以及tag值
   s.requires_arc = true #是否支持ARC
 
   s.source_files = "beaconXSDK/*.{h,m}"
