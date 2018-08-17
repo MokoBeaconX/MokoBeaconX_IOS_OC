@@ -6,8 +6,8 @@
 //  Copyright © 2018年 MK. All rights reserved.
 //
 
-#import "HCKBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MKTestViewController : HCKBaseViewController
+@interface MKTestViewController : UIViewController
 
 @end

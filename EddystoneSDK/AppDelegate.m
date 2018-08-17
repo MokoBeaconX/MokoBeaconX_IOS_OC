@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "HCKScanController.h"
+#import "MKScanViewController.h"
+#import "MKCentralManager.h"
 
 @interface AppDelegate ()
 
@@ -19,11 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    HCKScanController *vc = [[HCKScanController alloc] initWithNavigationType:GYNaviTypeShow];
+    MKScanViewController *vc = [[MKScanViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     _window.rootViewController = nav;
+    [self setGloab];
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
+    [MKCentralManager sharedInstance];
     return YES;
 }
 
@@ -54,5 +57,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)setGloab{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:18.f]}];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:15.f]} forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor greenColor]];
+    [[UITableView appearance] setSeparatorColor:[UIColor blackColor]];
+}
 
 @end

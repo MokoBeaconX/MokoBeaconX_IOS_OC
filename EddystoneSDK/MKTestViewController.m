@@ -7,11 +7,11 @@
 //
 
 #import "MKTestViewController.h"
-#import "HCKBaseTableView.h"
+#import "MKEddystoneSDK.h"
 
 @interface MKTestViewController ()<UITableViewDelegate,UITableViewDataSource,MKEddystoneCentralManagerDelegate>
 
-@property (nonatomic, strong)HCKBaseTableView *tableView;
+@property (nonatomic, strong)UITableView *tableView;
 
 @property (nonatomic, strong)NSMutableArray *dataList;
 
@@ -27,11 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.view);
-    }];
     [self loadDatas];
     [MKCentralManager sharedInstance].stateDelegate = self;
+    [self setUIConfig];
     // Do any additional setup after loading the view.
 }
 
@@ -272,9 +270,25 @@
     [self.tableView reloadData];
 }
 
-- (HCKBaseTableView *)tableView{
+- (void)setUIConfig{
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Scan"
+                                                                 style:UIBarButtonItemStyleDone
+                                                                target:self
+                                                                action:@selector(scanMethod)];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Stop"
+                                                                  style:UIBarButtonItemStyleDone
+                                                                 target:self
+                                                                 action:@selector(stopMethod)];
+    self.navigationController.navigationItem.leftBarButtonItems = @[leftItem];
+    self.navigationController.navigationItem.rightBarButtonItems = @[rightItem];
+}
+
+- (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[HCKBaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,
+                                                                   0,
+                                                                   self.view.frame.size.width, self.view.frame.size.height)
+                                                  style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

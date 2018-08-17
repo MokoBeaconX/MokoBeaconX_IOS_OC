@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "beaconXSDK"    #存储库名称
   s.version      = "0.0.1"      #版本号，与tag值一致
   s.summary      = "SDK For eddystone"  #简介
-  s.description  = "SDK For eddystone"  #描述
+  s.description  = "SDK For Eddystone"  #描述
   s.homepage     = "https://github.com/MokoBeaconX/mokoBeaconX_iOS"      #项目主页，不是git地址
   s.license      = { :type => "MIT", :file => "LICENSE" }   #开源协议
   s.author             = { "lovexiaoxia" => "aadyx2007@163.com" }  #作者

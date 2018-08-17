@@ -1,9 +1,0 @@
-
-
-
-#define HCKLogFileManager [HCKCommunicationLogFileManager sharedLogFileManager]
-#define needCommunicationLog HCKLogFileManager.openLog
-
-#define HCKBluetoothCentralManager [HCKCentralManager sharedCentralManager]
-#define HCKBluetoothPeripheralManager [HCKPeripheralManager sharedPeripheralManager]
-#define HCKBluetoothStatusManager [HCKConnectionStatusMonitoringManager sharedStatusMonitoringManger]
