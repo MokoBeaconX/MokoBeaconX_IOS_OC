@@ -1,7 +1,7 @@
 # mokoBeaconX_iOS
 工程引入头文件
 #import "MKEddystoneSDK.h"
-#### 1.扫描
+#### 1.Scan
 ```
 //delegate
 [MKCentralManager sharedInstance].scanDelegate = self;
