@@ -12,8 +12,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/MokoBeaconX/mokoBeaconX_iOS.git", :tag => "#{s.version}" }         #存储库的git地址，以及tag值
   s.requires_arc = true #是否支持ARC
 
-  s.source_files = "beaconXSDK/*.{h,m}"
-
-  #s.dependency "MQTTClient","~> 0.15.0"     #所依赖的第三方库，没有就不用写
+  s.source_files = "beaconXSDK/**"
 
 end
