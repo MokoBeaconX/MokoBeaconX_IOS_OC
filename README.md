@@ -1,7 +1,7 @@
 # MokoBeaconX_iOS
  
-## support pod,
-## pod 'beaconXSDK', '~> 0.0.1'
+## support pod, pod 'beaconXSDK', '~> 0.0.1'
+
 ## Import header file
 
 ### import "MKEddystoneSDK.h"
