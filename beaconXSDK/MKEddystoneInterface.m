@@ -46,7 +46,7 @@
 + (void)setEddystoneAdvertingInterval:(NSInteger)advertingInterval
                              sucBlock:(void (^)(id returnData))sucBlock
                           failedBlock:(void (^)(NSError *error))failedBlock{
-    if (advertingInterval < 100 || advertingInterval > 4000) {
+    if (advertingInterval < 100 || advertingInterval > 5000) {
         [MKEddystoneAdopter operationParamsErrorBlock:failedBlock];
         return;
     }
@@ -372,7 +372,7 @@
 + (void)setEddystoneDeviceName:(NSString *)deviceName
                       sucBlock:(void (^)(id returnData))sucBlock
                    failedBlock:(void (^)(NSError *error))failedBlock{
-    if (![MKEddystoneAdopter checkDeviceName:deviceName]) {
+    if (!deviceName || ![deviceName isKindOfClass:[NSString class]] || deviceName.length == 0 || deviceName.length > 8) {
         [MKEddystoneAdopter operationParamsErrorBlock:failedBlock];
         return;
     }

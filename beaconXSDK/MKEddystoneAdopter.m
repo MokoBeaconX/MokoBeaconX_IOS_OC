@@ -103,6 +103,15 @@ static NSString * const MKCustomErrorDomain = @"com.moko.eddystoneSDKDomain";
     });
 }
 
++ (void)operationCannotReconnectErrorBlock:(void (^)(NSError *errro))block{
+    moko_main_safe(^{
+        if (block) {
+            NSError *error = [self getErrorWithCode:MKEddystoneCannotReconnect message:@"Is connection, cannot undertake a new connection"];
+            block(error);
+        }
+    });
+}
+
 #pragma mark -
 
 + (BOOL)isPassword:(NSString *)password{

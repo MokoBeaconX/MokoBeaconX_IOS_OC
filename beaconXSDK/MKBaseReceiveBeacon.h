@@ -17,36 +17,31 @@ typedef NS_ENUM(NSUInteger, MKFrameType) {
     MKEddystoneUIDFrameType = 0,                   //UID
     MKEddystoneURLFrameType = 1,                   //URL
     MKEddystoneTLMFrameType = 2,                   //TLM
-    MKEddystoneiBeaconFrameType = 3,               //iBeacon信息
-    MKEddystoneInfoFrameType = 4,                  //设备信息
+    MKEddystoneiBeaconFrameType = 3,               //iBeacon
+    MKEddystoneInfoFrameType = 4,                  //Device Information
     MKEddystoneNODATAFrameType = 5,                //NO DATA
-    MKEddystoneUnknownFrameType = 6                //未知
+    MKEddystoneUnknownFrameType = 6                //Unknown
 };
 
 @interface MKBaseReceiveBeacon : NSObject
-
 /**
- 帧类型
+ Frame type
  */
 @property (nonatomic, assign)MKFrameType frameType;
-
 /**
- 信号值强度
+ rssi
  */
 @property (nonatomic, strong)NSNumber *rssi;
-
 /**
- 外设标识符
+ Scanned device identifier
  */
 @property (nonatomic, copy)NSString *identifier;
-
 /**
- 当前数据来源
+ Scanned devices
  */
 @property (nonatomic, strong)CBPeripheral *peripheral;
-
 /**
- 原始的广播数据
+ Advertisement data of device
  */
 @property (nonatomic, strong)NSData *advertiseData;
 
@@ -71,7 +66,7 @@ typedef NS_ENUM(NSUInteger, MKFrameType) {
 
 #pragma mark - UID广播帧
 @interface MKReceiveUIDBeacon : MKBaseReceiveBeacon
-
+//RSSI@0m
 @property (nonatomic) NSNumber *txPower;
 @property (nonatomic) NSString *namespaceId;
 @property (nonatomic) NSString *instanceId;
@@ -82,8 +77,9 @@ typedef NS_ENUM(NSUInteger, MKFrameType) {
 
 #pragma mark - URL广播帧
 @interface MKReceiveURLBeacon : MKBaseReceiveBeacon
-
+//RSSI@0m
 @property (nonatomic) NSNumber *txPower;
+//URL Content
 @property (nonatomic) NSString *shortUrl;
 
 - (MKReceiveURLBeacon *)initWithAdvertiseData:(NSData *)advertiseData;
@@ -98,7 +94,7 @@ typedef NS_ENUM(NSUInteger, MKFrameType) {
 @property (nonatomic, copy)NSString *minor;
 
 @property (nonatomic, copy)NSString *uuid;
-
+//RSSI@0m
 @property (nonatomic, copy)NSString *txPower;
 
 - (MKReceiveiBeacon *)initWithAdvertiseData:(NSData *)advertiseData;
@@ -109,32 +105,31 @@ typedef NS_ENUM(NSUInteger, MKFrameType) {
 @interface MKReceivePeripheralInfoBeacon : MKBaseReceiveBeacon
 
 /**
- 广播间隔，单位s
+ Advertising Interval， Unit：S
  */
 @property (nonatomic, copy)NSString *broadcastInterval;
-
 /**
- 发射功率
+ Tx Power
  */
 @property (nonatomic, copy)NSString *radioPower;
-
 /**
- mac地址
+ mac
  */
 @property (nonatomic, copy)NSString *macAddress;
-
 /**
- 软件版本
+ firmware version
  */
 @property (nonatomic, copy)NSString *firmwareVersion;
-
 /**
- 电池电量百分比
+ connectEnable
+ */
+@property (nonatomic, assign)BOOL connectEnable;
+/**
+ battery
  */
 @property (nonatomic, copy)NSString *battery;
-
 /**
- 设备名称
+ Device Name
  */
 @property (nonatomic, copy)NSString *peripheralName;
 

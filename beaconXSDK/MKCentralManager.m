@@ -53,10 +53,14 @@ static dispatch_once_t onceToken;
 
 @property (nonatomic, copy)MKConnectProgressBlock progressBlock;
 
+/**
+ 防止连续调用连接产生问题
+ */
+@property (nonatomic, assign)BOOL isConnecting;
+
 @end
 
 @implementation MKCentralManager
-
 - (instancetype)init{
     if (self = [super init]) {
         _centralManagerQueue = dispatch_queue_create("MKCentralManagerQueue", DISPATCH_QUEUE_SERIAL);
@@ -72,6 +76,11 @@ static dispatch_once_t onceToken;
         }
     });
     return manager;
+}
+
++ (void)instanceDealloc{
+    onceToken = 0;
+    manager = nil;
 }
 
 #pragma mark - CBCentralManagerDelegate
@@ -258,6 +267,12 @@ static dispatch_once_t onceToken;
         [MKEddystoneAdopter operationCentralBlePowerOffBlock:failedBlock];
         return;
     }
+    if (self.isConnecting) {
+        //正在连接
+        [MKEddystoneAdopter operationCannotReconnectErrorBlock:failedBlock];
+        return;
+    }
+    self.isConnecting = YES;
     if (self.currentMode == managerScanMode) {
         [self stopScanPeripheral];
     }
@@ -294,6 +309,7 @@ static dispatch_once_t onceToken;
     [self.operationQueue cancelAllOperations];
     [self updateConnectState:MKEddystoneConnectStatusDisconnect];
     [self updateLockState:MKEddystoneLockStateLock];
+    self.isConnecting = NO;
     if (!self.peripheral || self.centralManager.state != CBCentralManagerStatePoweredOn) {
         return;
     }
@@ -465,6 +481,7 @@ static dispatch_once_t onceToken;
     self.sucBlock = nil;
     self.failedBlock = nil;
     self.password = nil;
+    self.isConnecting = NO;
 }
 
 #pragma mark - communication method
@@ -593,11 +610,10 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 解锁过程
 - (void)updateConnectProgress:(float)progress{
-    if (!self.progressBlock) {
-        return;
-    }
     moko_main_safe(^{
-        self.progressBlock(progress);
+        if (self.progressBlock) {
+            self.progressBlock(progress);
+        }
     });
 }
 - (void)sendPasswordToDevice{

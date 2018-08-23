@@ -269,7 +269,8 @@
         self.radioPower = [NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(2, 2)] UTF8String],0,16)];
         NSString *tempMac = [[temp substringWithRange:NSMakeRange(4, 12)] uppercaseString];
         self.macAddress = [NSString stringWithFormat:@"%@:%@:%@:%@:%@:%@",[tempMac substringWithRange:NSMakeRange(0, 2)],[tempMac substringWithRange:NSMakeRange(2, 2)],[tempMac substringWithRange:NSMakeRange(4, 2)],[tempMac substringWithRange:NSMakeRange(6, 2)],[tempMac substringWithRange:NSMakeRange(8, 2)],[tempMac substringWithRange:NSMakeRange(10, 2)]];
-        self.firmwareVersion = [NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(16, 4)] UTF8String],0,16)];
+        self.firmwareVersion = [temp substringWithRange:NSMakeRange(16, 2)];
+        self.connectEnable = ([[temp substringWithRange:NSMakeRange(18, 2)] isEqualToString:@"01"]);
         self.battery = [NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(20, 2)] UTF8String],0,16)];
         NSData *nameData = [advertiseData subdataWithRange:NSMakeRange(11, advertiseData.length - 11)];
         NSString *nameString = [[NSString alloc] initWithData:nameData encoding:NSUTF8StringEncoding];

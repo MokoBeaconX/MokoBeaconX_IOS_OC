@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, MKCustomErrorCode){
     MKBeaconPasswordError = -10007,                             //连接密码错误
     MKCommunicationTimeout = -1008,                             //通信超时
     MKEddystoneLocked = -1009,                                  //处于锁定状态
+    MKEddystoneCannotReconnect = -1010,                         //如果正在处于连接流程，不允许新的连接
 };
 
 @interface MKEddystoneAdopter : NSObject
@@ -36,6 +37,7 @@ typedef NS_ENUM(NSInteger, MKCustomErrorCode){
 + (void)operationSetParamsErrorBlock:(void (^)(NSError *error))block;
 + (void)operationPasswordErrorBlock:(void (^)(NSError *error))block;
 + (void)operationLockedErrorBlock:(void (^)(NSError *error))block;
++ (void)operationCannotReconnectErrorBlock:(void (^)(NSError *errro))block;
 
 #pragma mark -
 + (BOOL)isPassword:(NSString *)password;
