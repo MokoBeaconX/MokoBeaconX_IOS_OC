@@ -194,7 +194,7 @@
                     urlContent:(NSString *)urlContent
                       sucBlock:(void (^)(id returnData))sucBlock
                    failedBlock:(void (^)(NSError *error))failedBlock{
-    if (!MKValidStr(urlContent)) {
+    if (![MKEddystoneAdopter checkUrlContent:urlContent]) {
         [MKEddystoneAdopter operationParamsErrorBlock:failedBlock];
         return;
     }
@@ -399,6 +399,16 @@
     NSString *status = (connectEnable ? @"01" : @"00");
     NSString *commandString = [@"ea890001" stringByAppendingString:status];
     [[MKCentralManager sharedInstance] addTaskWithTaskID:MKEddystoneSetConnectEnableOperation
+                                             commandData:commandString
+                                          characteristic:[MKCentralManager sharedInstance].peripheral.iBeaconWrite
+                                            successBlock:sucBlock
+                                            failureBlock:failedBlock];
+}
+
++ (void)setEddystonePowerOffWithSucBlock:(void (^)(id returnData))sucBlock
+                             failedBlock:(void (^)(NSError *error))failedBlock{
+    NSString *commandString = @"ea600000";
+    [[MKCentralManager sharedInstance] addTaskWithTaskID:MKEddystoneSetPowerOffOperation
                                              commandData:commandString
                                           characteristic:[MKCentralManager sharedInstance].peripheral.iBeaconWrite
                                             successBlock:sucBlock

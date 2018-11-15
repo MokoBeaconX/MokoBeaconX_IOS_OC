@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, MKCustomErrorCode){
 + (BOOL)isNameSpace:(NSString *)nameSpace;
 + (BOOL)isInstanceID:(NSString *)instanceID;
 + (BOOL)isUUIDString:(NSString *)uuid;
++ (BOOL)checkUrlContent:(NSString *)urlContent;
 + (NSInteger)getDecimalWithHex:(NSString *)content range:(NSRange)range;
 + (NSString *)getDecimalStringWithHex:(NSString *)content range:(NSRange)range;
 + (NSData *)stringToData:(NSString *)dataString;

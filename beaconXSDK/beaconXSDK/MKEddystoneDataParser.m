@@ -326,7 +326,7 @@ NSString *const MKEddystoneDataNum = @"MKEddystoneDataNum";
         returnDic = @{};
     }else if ([function isEqualToString:@"60"]){
         //设置iBeacon的校验距离
-        operationID = MKEddystoneSetMeasurePowerOperation;
+        operationID = MKEddystoneSetPowerOffOperation;
         returnDic = @{};
     }else if ([function isEqualToString:@"61"]){
         //读取eddyStone设备通道数据类型

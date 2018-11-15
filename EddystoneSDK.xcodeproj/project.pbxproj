@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000E7D03219D5113000058E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 000E7CEE219D5113000058E1 /* LICENSE */; };
+		000E7D04219D5113000058E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 000E7CEF219D5113000058E1 /* README.md */; };
+		000E7D05219D5113000058E1 /* MKEddystoneInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7CF3219D5113000058E1 /* MKEddystoneInterface.m */; };
+		000E7D06219D5113000058E1 /* MKCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7CF4219D5113000058E1 /* MKCentralManager.m */; };
+		000E7D07219D5113000058E1 /* MKBaseReceiveBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7CF5219D5113000058E1 /* MKBaseReceiveBeacon.m */; };
+		000E7D08219D5113000058E1 /* MKEddystoneOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7CF7219D5113000058E1 /* MKEddystoneOperation.m */; };
+		000E7D09219D5113000058E1 /* MKEddystoneAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7CF9219D5113000058E1 /* MKEddystoneAdopter.m */; };
+		000E7D0A219D5113000058E1 /* MKEddystoneDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7D00219D5113000058E1 /* MKEddystoneDataParser.m */; };
+		000E7D0B219D5113000058E1 /* CBPeripheral+eddystoneAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E7D02219D5113000058E1 /* CBPeripheral+eddystoneAdd.m */; };
+		000E7D0D219D5119000058E1 /* beaconXSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 000E7D0C219D5119000058E1 /* beaconXSDK.podspec */; };
 		00151AC821226E91004EC60D /* MKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001519B721226E90004EC60D /* MKTestViewController.m */; };
-		0016C122212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C111212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m */; };
-		0016C123212583AF00B1C32D /* MKBaseReceiveBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C113212583AF00B1C32D /* MKBaseReceiveBeacon.m */; };
-		0016C124212583AF00B1C32D /* MKCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C115212583AF00B1C32D /* MKCentralManager.m */; };
-		0016C125212583AF00B1C32D /* MKEddystoneAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C117212583AF00B1C32D /* MKEddystoneAdopter.m */; };
-		0016C126212583AF00B1C32D /* MKEddystoneDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C119212583AF00B1C32D /* MKEddystoneDataParser.m */; };
-		0016C127212583AF00B1C32D /* MKEddystoneInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C11B212583AF00B1C32D /* MKEddystoneInterface.m */; };
-		0016C128212583AF00B1C32D /* MKEddystoneOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016C11D212583AF00B1C32D /* MKEddystoneOperation.m */; };
 		001EC5E4211AE4380041806D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC5E3211AE4380041806D /* AppDelegate.m */; };
 		001EC5EC211AE4380041806D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001EC5EB211AE4380041806D /* Assets.xcassets */; };
 		001EC5F2211AE4380041806D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC5F1211AE4380041806D /* main.m */; };
@@ -22,26 +25,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000E7CEE219D5113000058E1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		000E7CEF219D5113000058E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		000E7CF1219D5113000058E1 /* MKEddystoneAdopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneAdopter.h; sourceTree = "<group>"; };
+		000E7CF2219D5113000058E1 /* MKEddystoneOperationIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperationIDDefines.h; sourceTree = "<group>"; };
+		000E7CF3219D5113000058E1 /* MKEddystoneInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneInterface.m; sourceTree = "<group>"; };
+		000E7CF4219D5113000058E1 /* MKCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCentralManager.m; sourceTree = "<group>"; };
+		000E7CF5219D5113000058E1 /* MKBaseReceiveBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseReceiveBeacon.m; sourceTree = "<group>"; };
+		000E7CF6219D5113000058E1 /* CBPeripheral+eddystoneAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+eddystoneAdd.h"; sourceTree = "<group>"; };
+		000E7CF7219D5113000058E1 /* MKEddystoneOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneOperation.m; sourceTree = "<group>"; };
+		000E7CF8219D5113000058E1 /* MKEddystoneDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneDataParser.h; sourceTree = "<group>"; };
+		000E7CF9219D5113000058E1 /* MKEddystoneAdopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneAdopter.m; sourceTree = "<group>"; };
+		000E7CFA219D5113000058E1 /* MKEddystoneService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneService.h; sourceTree = "<group>"; };
+		000E7CFB219D5113000058E1 /* MKBaseReceiveBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseReceiveBeacon.h; sourceTree = "<group>"; };
+		000E7CFC219D5113000058E1 /* MKSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSDKDefines.h; sourceTree = "<group>"; };
+		000E7CFD219D5113000058E1 /* MKCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCentralManager.h; sourceTree = "<group>"; };
+		000E7CFE219D5113000058E1 /* MKEddystoneInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneInterface.h; sourceTree = "<group>"; };
+		000E7CFF219D5113000058E1 /* MKEddystoneSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneSDK.h; sourceTree = "<group>"; };
+		000E7D00219D5113000058E1 /* MKEddystoneDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneDataParser.m; sourceTree = "<group>"; };
+		000E7D01219D5113000058E1 /* MKEddystoneOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperation.h; sourceTree = "<group>"; };
+		000E7D02219D5113000058E1 /* CBPeripheral+eddystoneAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+eddystoneAdd.m"; sourceTree = "<group>"; };
+		000E7D0C219D5119000058E1 /* beaconXSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beaconXSDK.podspec; sourceTree = "<group>"; };
 		001519B721226E90004EC60D /* MKTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTestViewController.m; sourceTree = "<group>"; };
 		00151AC721226E91004EC60D /* MKTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTestViewController.h; sourceTree = "<group>"; };
-		0016C110212583AF00B1C32D /* CBPeripheral+eddystoneAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+eddystoneAdd.h"; sourceTree = "<group>"; };
-		0016C111212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+eddystoneAdd.m"; sourceTree = "<group>"; };
-		0016C112212583AF00B1C32D /* MKBaseReceiveBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseReceiveBeacon.h; sourceTree = "<group>"; };
-		0016C113212583AF00B1C32D /* MKBaseReceiveBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseReceiveBeacon.m; sourceTree = "<group>"; };
-		0016C114212583AF00B1C32D /* MKCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCentralManager.h; sourceTree = "<group>"; };
-		0016C115212583AF00B1C32D /* MKCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCentralManager.m; sourceTree = "<group>"; };
-		0016C116212583AF00B1C32D /* MKEddystoneAdopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneAdopter.h; sourceTree = "<group>"; };
-		0016C117212583AF00B1C32D /* MKEddystoneAdopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneAdopter.m; sourceTree = "<group>"; };
-		0016C118212583AF00B1C32D /* MKEddystoneDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneDataParser.h; sourceTree = "<group>"; };
-		0016C119212583AF00B1C32D /* MKEddystoneDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneDataParser.m; sourceTree = "<group>"; };
-		0016C11A212583AF00B1C32D /* MKEddystoneInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneInterface.h; sourceTree = "<group>"; };
-		0016C11B212583AF00B1C32D /* MKEddystoneInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneInterface.m; sourceTree = "<group>"; };
-		0016C11C212583AF00B1C32D /* MKEddystoneOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperation.h; sourceTree = "<group>"; };
-		0016C11D212583AF00B1C32D /* MKEddystoneOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEddystoneOperation.m; sourceTree = "<group>"; };
-		0016C11E212583AF00B1C32D /* MKEddystoneOperationIDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneOperationIDDefines.h; sourceTree = "<group>"; };
-		0016C11F212583AF00B1C32D /* MKEddystoneSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneSDK.h; sourceTree = "<group>"; };
-		0016C120212583AF00B1C32D /* MKEddystoneService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEddystoneService.h; sourceTree = "<group>"; };
-		0016C121212583AF00B1C32D /* MKSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSDKDefines.h; sourceTree = "<group>"; };
 		001EC5DF211AE4380041806D /* EddystoneSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EddystoneSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001EC5E2211AE4380041806D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		001EC5E3211AE4380041806D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,27 +70,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0016C10F212583AF00B1C32D /* beaconXSDK */ = {
+		000E7CED219D5113000058E1 /* beaconXSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0016C110212583AF00B1C32D /* CBPeripheral+eddystoneAdd.h */,
-				0016C111212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m */,
-				0016C112212583AF00B1C32D /* MKBaseReceiveBeacon.h */,
-				0016C113212583AF00B1C32D /* MKBaseReceiveBeacon.m */,
-				0016C114212583AF00B1C32D /* MKCentralManager.h */,
-				0016C115212583AF00B1C32D /* MKCentralManager.m */,
-				0016C116212583AF00B1C32D /* MKEddystoneAdopter.h */,
-				0016C117212583AF00B1C32D /* MKEddystoneAdopter.m */,
-				0016C118212583AF00B1C32D /* MKEddystoneDataParser.h */,
-				0016C119212583AF00B1C32D /* MKEddystoneDataParser.m */,
-				0016C11A212583AF00B1C32D /* MKEddystoneInterface.h */,
-				0016C11B212583AF00B1C32D /* MKEddystoneInterface.m */,
-				0016C11C212583AF00B1C32D /* MKEddystoneOperation.h */,
-				0016C11D212583AF00B1C32D /* MKEddystoneOperation.m */,
-				0016C11E212583AF00B1C32D /* MKEddystoneOperationIDDefines.h */,
-				0016C11F212583AF00B1C32D /* MKEddystoneSDK.h */,
-				0016C120212583AF00B1C32D /* MKEddystoneService.h */,
-				0016C121212583AF00B1C32D /* MKSDKDefines.h */,
+				000E7CEE219D5113000058E1 /* LICENSE */,
+				000E7CEF219D5113000058E1 /* README.md */,
+				000E7CF0219D5113000058E1 /* beaconXSDK */,
+			);
+			path = beaconXSDK;
+			sourceTree = "<group>";
+		};
+		000E7CF0219D5113000058E1 /* beaconXSDK */ = {
+			isa = PBXGroup;
+			children = (
+				000E7CF1219D5113000058E1 /* MKEddystoneAdopter.h */,
+				000E7CF2219D5113000058E1 /* MKEddystoneOperationIDDefines.h */,
+				000E7CF3219D5113000058E1 /* MKEddystoneInterface.m */,
+				000E7CF4219D5113000058E1 /* MKCentralManager.m */,
+				000E7CF5219D5113000058E1 /* MKBaseReceiveBeacon.m */,
+				000E7CF6219D5113000058E1 /* CBPeripheral+eddystoneAdd.h */,
+				000E7CF7219D5113000058E1 /* MKEddystoneOperation.m */,
+				000E7CF8219D5113000058E1 /* MKEddystoneDataParser.h */,
+				000E7CF9219D5113000058E1 /* MKEddystoneAdopter.m */,
+				000E7CFA219D5113000058E1 /* MKEddystoneService.h */,
+				000E7CFB219D5113000058E1 /* MKBaseReceiveBeacon.h */,
+				000E7CFC219D5113000058E1 /* MKSDKDefines.h */,
+				000E7CFD219D5113000058E1 /* MKCentralManager.h */,
+				000E7CFE219D5113000058E1 /* MKEddystoneInterface.h */,
+				000E7CFF219D5113000058E1 /* MKEddystoneSDK.h */,
+				000E7D00219D5113000058E1 /* MKEddystoneDataParser.m */,
+				000E7D01219D5113000058E1 /* MKEddystoneOperation.h */,
+				000E7D02219D5113000058E1 /* CBPeripheral+eddystoneAdd.m */,
 			);
 			path = beaconXSDK;
 			sourceTree = "<group>";
@@ -92,7 +108,8 @@
 		001EC5D6211AE4380041806D = {
 			isa = PBXGroup;
 			children = (
-				0016C10F212583AF00B1C32D /* beaconXSDK */,
+				000E7D0C219D5119000058E1 /* beaconXSDK.podspec */,
+				000E7CED219D5113000058E1 /* beaconXSDK */,
 				001EC5E1211AE4380041806D /* EddystoneSDK */,
 				001EC5E0211AE4380041806D /* Products */,
 				C3A8B17FC9E356100F8EF707 /* Frameworks */,
@@ -157,7 +174,7 @@
 		001EC5D7211AE4380041806D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = MK;
 				TargetAttributes = {
 					001EC5DE211AE4380041806D = {
@@ -189,6 +206,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000E7D0D219D5119000058E1 /* beaconXSDK.podspec in Resources */,
+				000E7D04219D5113000058E1 /* README.md in Resources */,
+				000E7D03219D5113000058E1 /* LICENSE in Resources */,
 				001EC5EC211AE4380041806D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,17 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0016C123212583AF00B1C32D /* MKBaseReceiveBeacon.m in Sources */,
-				0016C122212583AF00B1C32D /* CBPeripheral+eddystoneAdd.m in Sources */,
-				0016C125212583AF00B1C32D /* MKEddystoneAdopter.m in Sources */,
+				000E7D07219D5113000058E1 /* MKBaseReceiveBeacon.m in Sources */,
+				000E7D0B219D5113000058E1 /* CBPeripheral+eddystoneAdd.m in Sources */,
+				000E7D08219D5113000058E1 /* MKEddystoneOperation.m in Sources */,
+				000E7D0A219D5113000058E1 /* MKEddystoneDataParser.m in Sources */,
 				001EC5F2211AE4380041806D /* main.m in Sources */,
+				000E7D06219D5113000058E1 /* MKCentralManager.m in Sources */,
 				0046182B21269D300036C060 /* MKScanViewController.m in Sources */,
+				000E7D09219D5113000058E1 /* MKEddystoneAdopter.m in Sources */,
 				001EC5E4211AE4380041806D /* AppDelegate.m in Sources */,
-				0016C126212583AF00B1C32D /* MKEddystoneDataParser.m in Sources */,
+				000E7D05219D5113000058E1 /* MKEddystoneInterface.m in Sources */,
 				00151AC821226E91004EC60D /* MKTestViewController.m in Sources */,
-				0016C124212583AF00B1C32D /* MKCentralManager.m in Sources */,
-				0016C127212583AF00B1C32D /* MKEddystoneInterface.m in Sources */,
-				0016C128212583AF00B1C32D /* MKEddystoneOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +251,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -238,6 +259,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -286,6 +308,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -293,6 +316,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

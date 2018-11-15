@@ -245,7 +245,12 @@
         self.uuid = [uuid uppercaseString];
         self.major = [NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(32, 4)] UTF8String],0,16)];
         self.minor = [NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(36, 4)] UTF8String],0,16)];
-        self.txPower = [@"-" stringByAppendingString:[NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(40, 2)] UTF8String],0,16)]];
+        NSInteger rssiValue = strtoul([[temp substringWithRange:NSMakeRange(40, 2)] UTF8String],0,16);
+        if (rssiValue == 0) {
+            self.txPower = @"0";
+        }else{
+            self.txPower = [@"-" stringByAppendingString:[NSString stringWithFormat:@"%ld",(long)rssiValue]];
+        }
         NSLog(@"当前广播数据:%@",advertiseData);
     }
     return self;

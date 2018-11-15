@@ -331,6 +331,14 @@ static NSString * const MKCustomErrorDomain = @"com.moko.eddystoneSDKDomain";
     return encryptData;
 }
 
++ (BOOL)checkUrlContent:(NSString *)urlContent{
+    if (!MKValidStr(urlContent)) {
+        return NO;
+    }
+    NSArray *contentList = @[@".com/",@".org/",@".edu/",@".net/",@".info/",@".biz/",@".gov/",@".com",@".org",@".edu",@".net",@".info",@".biz",@".gov"];
+    return ![contentList containsObject:urlContent];
+}
+
 + (NSString *)fecthUrlStringWithHeader:(NSString *)urlHeader urlContent:(NSString *)urlContent{
     NSString *url = [urlHeader stringByAppendingString:urlContent];
     if ([self checkUrl:url]) {

@@ -34,10 +34,10 @@ typedef NS_ENUM(NSInteger, MKEddystoneOperationID) {
     MKEddystoneReadConnectEnableOperation,                //获取eddystone的可连接状态
     MKEddystoneSetMajorOperation,                         //设置iBeacon的主值iBeaconMajor
     MKEddystoneSetMinorOperation,                         //设置iBeacon的次值
-    MKEddystoneSetMeasurePowerOperation,                  //设置iBeacon的校验距离
     MKEddystoneSetiBeaconDataOperation,                   //设置eddystone的iBeacon主值次值和发射功率
     MKEddystoneSetiBeaconUUIDOperation,                //设置eddystone的iBeacon UUID
     MKEddystoneSetDeviceNameOperation,                 //设置eddystone的设备名字
     MKEddystoneSetConnectEnableOperation,              //设置eddystone的可连接状态
+    MKEddystoneSetPowerOffOperation,                    //关机命令
     MKEddystoneReadBatteryOperation,                      //读取battery
 };

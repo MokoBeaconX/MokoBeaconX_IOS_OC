@@ -264,6 +264,15 @@ typedef NS_ENUM(NSInteger, urlHeaderType) {
                          sucBlock:(void (^)(id returnData))sucBlock
                       failedBlock:(void (^)(NSError *error))failedBlock;
 
+/**
+ Setting device power off
+
+ @param sucBlock success callback
+ @param failedBlock failed callback
+ */
++ (void)setEddystonePowerOffWithSucBlock:(void (^)(id returnData))sucBlock
+                             failedBlock:(void (^)(NSError *error))failedBlock;
+
 #pragma mark - 180A system data
 /**
  Reading the vendor information
