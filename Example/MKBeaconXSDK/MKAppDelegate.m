@@ -1,18 +1,27 @@
 //
 //  MKAppDelegate.m
-//  MKBeaconXSDK
+//  beaconXSDK
 //
 //  Created by aadyx2007@163.com on 09/04/2019.
 //  Copyright (c) 2019 aadyx2007@163.com. All rights reserved.
 //
 
 #import "MKAppDelegate.h"
+#import "MKScanViewController.h"
+#import "MKCentralManager.h"
 
 @implementation MKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    MKScanViewController *vc = [[MKScanViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    _window.rootViewController = nav;
+//    [self setGloab];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
     return YES;
 }
 
@@ -41,6 +50,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setGloab{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:18.f]}];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:15.f]} forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor greenColor]];
+    [[UITableView appearance] setSeparatorColor:[UIColor blackColor]];
 }
 
 @end

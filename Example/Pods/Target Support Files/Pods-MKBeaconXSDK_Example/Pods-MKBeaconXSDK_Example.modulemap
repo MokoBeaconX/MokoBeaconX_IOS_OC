@@ -1,0 +1,6 @@
+framework module Pods_MKBeaconXSDK_Example {
+  umbrella header "Pods-MKBeaconXSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
