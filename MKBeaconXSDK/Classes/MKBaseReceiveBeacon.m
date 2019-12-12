@@ -225,10 +225,7 @@
 - (MKReceiveiBeacon *)initWithAdvertiseData:(NSData *)advertiseData{
     if (self = [super init]) {
         NSAssert1(!(advertiseData.length < 7), @"Invalid advertiseData:%@", advertiseData);
-        NSString *temp = advertiseData.description;
-        temp = [temp stringByReplacingOccurrencesOfString:@" " withString:@""];
-        temp = [temp stringByReplacingOccurrencesOfString:@"<" withString:@""];
-        temp = [temp stringByReplacingOccurrencesOfString:@">" withString:@""];
+        NSString *temp = [MKEddystoneAdopter hexStringFromData:advertiseData];
         NSMutableArray *array = [NSMutableArray arrayWithObjects:[temp substringWithRange:NSMakeRange(0, 8)],
                                  [temp substringWithRange:NSMakeRange(8, 4)],
                                  [temp substringWithRange:NSMakeRange(12, 4)],
@@ -265,10 +262,7 @@
     
     if (self = [super init]) {
         NSAssert1(!(advertiseData.length < 12), @"Invalid advertiseData:%@", advertiseData);
-        NSString *temp = advertiseData.description;
-        temp = [temp stringByReplacingOccurrencesOfString:@" " withString:@""];
-        temp = [temp stringByReplacingOccurrencesOfString:@"<" withString:@""];
-        temp = [temp stringByReplacingOccurrencesOfString:@">" withString:@""];
+        NSString *temp = [MKEddystoneAdopter hexStringFromData:advertiseData];
         NSInteger interval = strtoul([[temp substringWithRange:NSMakeRange(0, 2)] UTF8String],0,16);
         self.broadcastInterval = [NSString stringWithFormat:@"%.1f",interval * 0.1];
         self.radioPower = [NSString stringWithFormat:@"%ld",(long)strtoul([[temp substringWithRange:NSMakeRange(2, 2)] UTF8String],0,16)];
