@@ -98,7 +98,7 @@ static dispatch_once_t onceToken;
 #pragma mark - CBCentralManagerDelegate
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central{
     [self updateManagerState];
-    if (central.state == CBCentralManagerStatePoweredOn) {
+    if (central.state == CBManagerStatePoweredOn) {
         return;
     }
     if (self.currentMode == managerDefaultMode) {
@@ -233,7 +233,7 @@ static dispatch_once_t onceToken;
 
 #pragma mark - Public method
 - (void)startScanPeripheral{
-    if (self.centralManager.state != CBCentralManagerStatePoweredOn) {
+    if (self.centralManager.state != CBManagerStatePoweredOn) {
         //蓝牙状态不可用
         return;
     }
@@ -322,7 +322,7 @@ static dispatch_once_t onceToken;
     [self updateConnectState:MKEddystoneConnectStatusDisconnect];
     [self updateLockState:MKEddystoneLockStateLock];
     self.isConnecting = NO;
-    if (!self.peripheral || self.centralManager.state != CBCentralManagerStatePoweredOn) {
+    if (!self.peripheral || self.centralManager.state != CBManagerStatePoweredOn) {
         return;
     }
     [self.centralManager cancelPeripheralConnection:self.peripheral];
@@ -468,7 +468,7 @@ static dispatch_once_t onceToken;
 
 - (void)updateManagerState{
     MKEddystoneCentralManagerState managerState = MKEddystoneCentralManagerStateUnable;
-    if (self.centralManager.state == CBCentralManagerStatePoweredOn) {
+    if (self.centralManager.state == CBManagerStatePoweredOn) {
         managerState = MKEddystoneCentralManagerStateEnable;
     }
     self.managerState = managerState;

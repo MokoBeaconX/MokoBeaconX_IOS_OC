@@ -54,9 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00963AFD4EB8FA9B4C882808F1FF53A1 /* MKBeaconXSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKBeaconXSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		00963AFD4EB8FA9B4C882808F1FF53A1 /* MKBeaconXSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKBeaconXSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		093BE62A896C7A96936F9AA8FF586980 /* MKBeaconXSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBeaconXSDK-umbrella.h"; sourceTree = "<group>"; };
-		1240946BA72175DE337B35CFAC694CAE /* MKBeaconXSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBeaconXSDK.framework; path = MKBeaconXSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1240946BA72175DE337B35CFAC694CAE /* MKBeaconXSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKBeaconXSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1482A798031E65C1EE7C8B2D8DC5618E /* MKBeaconXSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKBeaconXSDK.xcconfig; sourceTree = "<group>"; };
 		21470618F8C1D0C2AC38CAA78C7CADB0 /* Pods-MKBeaconXSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBeaconXSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		237D48EC51F5B10E17590C149DA0BB64 /* MKEddystoneInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKEddystoneInterface.h; path = MKBeaconXSDK/Classes/MKEddystoneInterface.h; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35796DFE58AF2D4E255CDC2A8DC3BEF3 /* Pods-MKBeaconXSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKBeaconXSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3666284C902F22051230E7C8A1F0CB89 /* MKEddystoneDataParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKEddystoneDataParser.m; path = MKBeaconXSDK/Classes/MKEddystoneDataParser.m; sourceTree = "<group>"; };
-		3F3A478C669A199EF835F00FB6EEDE87 /* Pods_MKBeaconXSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBeaconXSDK_Example.framework; path = "Pods-MKBeaconXSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3A478C669A199EF835F00FB6EEDE87 /* Pods_MKBeaconXSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBeaconXSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A2EAD5FC2ABA247BA58FA1BB44C1BD /* Pods-MKBeaconXSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKBeaconXSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		42A009BAC089CF4D3337DBBECC912346 /* Pods-MKBeaconXSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBeaconXSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		54442947FC95A08523811F75522747C0 /* Pods-MKBeaconXSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKBeaconXSDK_Example.modulemap"; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 		5ED7427928F0A634BF0828BF6CADA534 /* MKBeaconXSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKBeaconXSDK-dummy.m"; sourceTree = "<group>"; };
 		5F11D9031C737D17B755F2241B5CA6B3 /* MKEddystoneInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKEddystoneInterface.m; path = MKBeaconXSDK/Classes/MKEddystoneInterface.m; sourceTree = "<group>"; };
 		7E09EE256B5ED7D29E77808643FD4026 /* Pods-MKBeaconXSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBeaconXSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F7A4606F4BDD2DCBD83FC30B9A230A0 /* Pods_MKBeaconXSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBeaconXSDK_Tests.framework; path = "Pods-MKBeaconXSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80C54A20215814BB8DC57C82A782E64D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7F7A4606F4BDD2DCBD83FC30B9A230A0 /* Pods_MKBeaconXSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBeaconXSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C54A20215814BB8DC57C82A782E64D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8BE95E07389329EEE874E2358E831E63 /* MKEddystoneOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKEddystoneOperation.m; path = MKBeaconXSDK/Classes/MKEddystoneOperation.m; sourceTree = "<group>"; };
 		91ACC75963C8FA012C18BF49F58C3FB9 /* MKEddystoneAdopter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKEddystoneAdopter.h; path = MKBeaconXSDK/Classes/MKEddystoneAdopter.h; sourceTree = "<group>"; };
 		979339536C8816298F7BC5F93FC5CCB2 /* MKBaseReceiveBeacon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseReceiveBeacon.m; path = MKBeaconXSDK/Classes/MKBaseReceiveBeacon.m; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		999A42D61A7897724CAF881092728CA2 /* Pods-MKBeaconXSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKBeaconXSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		9A0BEB7AC45E6A5888BD1E2C440D0878 /* MKBeaconXSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKBeaconXSDK.modulemap; sourceTree = "<group>"; };
 		9C5C1C568487AD2D90F73C0F12116856 /* Pods-MKBeaconXSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBeaconXSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A062E6C3C4FCE0558C860A683D202036 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A062E6C3C4FCE0558C860A683D202036 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A0C473C45879068DF02FE71E5B225C1A /* Pods-MKBeaconXSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKBeaconXSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		A61F3721706B96C165C39AC93F57BD25 /* MKEddystoneSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKEddystoneSDK.h; path = MKBeaconXSDK/Classes/MKEddystoneSDK.h; sourceTree = "<group>"; };
 		AF50A020DBBAA4CF06E61CA50CB9BBEA /* MKCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKCentralManager.m; path = MKBeaconXSDK/Classes/MKCentralManager.m; sourceTree = "<group>"; };
@@ -376,7 +376,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -384,6 +384,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 0A2EE591CE4540BF444C6215AA9A2313 /* Products */;
@@ -497,6 +498,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -519,13 +521,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -547,7 +548,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MKBeaconXSDK_Tests/Pods-MKBeaconXSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MKBeaconXSDK_Tests/Pods-MKBeaconXSDK_Tests.modulemap";
@@ -580,7 +581,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MKBeaconXSDK_Tests/Pods-MKBeaconXSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MKBeaconXSDK_Tests/Pods-MKBeaconXSDK_Tests.modulemap";
@@ -624,6 +625,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -649,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -678,7 +680,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MKBeaconXSDK_Example/Pods-MKBeaconXSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MKBeaconXSDK_Example/Pods-MKBeaconXSDK_Example.modulemap";
@@ -711,7 +713,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MKBeaconXSDK_Example/Pods-MKBeaconXSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MKBeaconXSDK_Example/Pods-MKBeaconXSDK_Example.modulemap";
@@ -745,7 +747,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MKBeaconXSDK/MKBeaconXSDK-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MKBeaconXSDK/MKBeaconXSDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MKBeaconXSDK/MKBeaconXSDK.modulemap";
 				PRODUCT_MODULE_NAME = MKBeaconXSDK;
@@ -777,7 +779,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MKBeaconXSDK/MKBeaconXSDK-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MKBeaconXSDK/MKBeaconXSDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MKBeaconXSDK/MKBeaconXSDK.modulemap";
 				PRODUCT_MODULE_NAME = MKBeaconXSDK;
