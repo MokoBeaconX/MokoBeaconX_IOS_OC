@@ -1,16 +1,65 @@
 PODS:
-  - MKBeaconXSDK (0.1.0)
+  - CircleProgressBar (0.32)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HJTabViewController (1.0.7)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
+  - MKBeaconXSDK (0.1.1)
+  - MLInputDodger (1.5.2)
+  - Toast (4.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - CircleProgressBar
+  - FMDB
+  - HJTabViewController (from `https://github.com/panghaijiao/HJTabViewController.git`)
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
   - MKBeaconXSDK (from `../`)
+  - MLInputDodger
+  - Toast
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CircleProgressBar
+    - FMDB
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MLInputDodger
+    - Toast
+    - YYKit
 
 EXTERNAL SOURCES:
+  HJTabViewController:
+    :git: https://github.com/panghaijiao/HJTabViewController.git
   MKBeaconXSDK:
     :path: "../"
 
+CHECKOUT OPTIONS:
+  HJTabViewController:
+    :commit: f864e2b904aba29b94113b6b35a78896c114889b
+    :git: https://github.com/panghaijiao/HJTabViewController.git
+
 SPEC CHECKSUMS:
-  MKBeaconXSDK: 96eb47d3bb9cc8637a105a4b3090358ec125d1a6
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HJTabViewController: 85aaeb7aef5d96f617ff7500f5002d8e288bedf5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MKBeaconXSDK: 68dba532e35172aeae7bab4f3208f33ce12d2468
+  MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 100957cd69011278ebd0f136183fdda96907badd
+PODFILE CHECKSUM: d5a4a0a8c06394036a9c84ce57d42b739e6d3b69
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.0.rc.1

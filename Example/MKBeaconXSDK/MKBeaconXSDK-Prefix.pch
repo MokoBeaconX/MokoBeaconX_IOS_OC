@@ -1,16 +1,37 @@
 //
-//  Prefix header
+//  HCKEddStone.pch
+//  HCKEddStone
 //
-//  The contents of this file are implicitly included at the beginning of every source file.
+//  Created by aa on 2017/11/27.
+//  Copyright © 2017年 HCK. All rights reserved.
 //
 
-#import <Availability.h>
+#ifndef HCKEddStone_pch
+#define HCKEddStone_pch
 
-#ifndef __IPHONE_5_0
-#warning "This project uses features only available in iOS SDK 5.0 and later."
-#endif
+/***第三方头文件****/
+#import <Masonry/Masonry.h>
+#import "MBProgressHUD.h"
+#import "FMDB.h"
+#import "UIView+Toast.h"
+#import "HCKHudManager.h"
+//#import "MJRefresh.h"
+#import "MLInputDodger.h"
+#import "CircleProgressBar.h"
+#import "YYKit.h"
 
-#ifdef __OBJC__
-    @import UIKit;
-    @import Foundation;
-#endif
+/***************/
+
+#import "MKAppDelegate.h"
+
+#import "HCKCategories.h"
+#import "HCKDefines.h"
+
+#import "MKEddystoneSDK.h"
+
+/******自定义工具类********/
+#import "HCKAttributedStringManager.h"
+#import "HCKTextField.h"
+#import "HCKDataManager.h"
+
+#endif /* HCKEddStone_pch */

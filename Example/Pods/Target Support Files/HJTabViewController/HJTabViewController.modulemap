@@ -1,0 +1,6 @@
+framework module HJTabViewController {
+  umbrella header "HJTabViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

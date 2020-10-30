@@ -1,9 +1,9 @@
 {
   "name": "MKBeaconXSDK",
-  "version": "0.1.0",
-  "summary": "A short description of MKBeaconXSDK.",
+  "version": "0.1.1",
+  "summary": "SDK for eddystone",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/aadyx2007@163.com/MKBeaconXSDK",
+  "homepage": "https://github.com/MokoBeaconX/mokoBeaconX_iOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "aadyx2007@163.com": "chengang@mokotechnology.com"
   },
   "source": {
-    "git": "https://github.com/aadyx2007@163.com/MKBeaconXSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/MokoBeaconX/mokoBeaconX_iOS.git",
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
   "source_files": "MKBeaconXSDK/Classes/**/*"
 }

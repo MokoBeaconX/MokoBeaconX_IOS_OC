@@ -1,9 +1,31 @@
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 12.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+    end
+  end
+end
+
 use_frameworks!
 
-platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.0'
 
 target 'MKBeaconXSDK_Example' do
   pod 'MKBeaconXSDK', :path => '../'
+  
+  pod 'Masonry'
+  pod 'FMDB'
+  pod 'Toast'
+  pod 'MBProgressHUD'
+  pod 'MJRefresh'
+  pod 'HJTabViewController',     :git => 'https://github.com/panghaijiao/HJTabViewController.git'
+  pod 'YYKit'
+  pod 'MLInputDodger'
+  pod 'CircleProgressBar'
 
   target 'MKBeaconXSDK_Tests' do
     inherit! :search_paths
